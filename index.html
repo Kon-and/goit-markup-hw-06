@@ -454,13 +454,70 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-btn-icon">
             <use href="images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <div class="form-field">
+            <label for="user-name" class="modal-form-field">Имя</label>
+            <div class="form-field-icon">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                placeholder=""
+                id="user-name"
+                required
+              />
+              <svg width="12" height="12">
+                <use class="modal-icon" href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="user-phone" class="modal-form-field">Телефон</label>
+            <input
+              type="tel"
+              name="user-phone"
+              class="modal-input"
+              placeholder=""
+              id="user-phone"
+              required
+            />
+            <svg width="12" height="12">
+              <use class="modal-icon" href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label for="user-mail" class="modal-form-field">Почта</label>
+            <input
+              type="email"
+              name="user-mail"
+              class="modal-input"
+              placeholder=""
+              id="user-mail"
+              required
+            />
+            <svg width="15" height="12">
+              <use class="modal-icon" href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label for="user-text" class="modal-form-field">Комментарий</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              placeholder="Введите текст"
+              class="modal-comment"
+            ></textarea>
+          </div>
+          <button type="submit" class="modal-btn-submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./modal.js"></script>
