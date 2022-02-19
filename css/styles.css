@@ -128,6 +128,10 @@ li {
   color: #000000;
 }
 
+.contacts-footer {
+  flex-grow: 1;
+}
+
 .header-list {
   font-weight: 500;
   line-height: calc(16 / 14);
@@ -863,11 +867,13 @@ li {
 }
 
 .modal-form-field {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--text-second);
+  margin-bottom: 4px;
 }
 
 .modal-comment {
@@ -911,7 +917,7 @@ li {
 }
 
 .form-field {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .modal-check-text {
